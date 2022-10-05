@@ -25,10 +25,24 @@ public class ControlFlowExercises {
 //            num1 -= 5;
 //        } while (num1 >= -10);
 
-        long num2 = 2;
-        do {
-            System.out.println(num2);
-            num2 *= num2;
-        }while (num2 <= 1000000);
+//        long num2 = 2;
+//        do {
+//            System.out.println(num2);
+//            num2 *= num2;
+//        }while (num2 <= 1000000);
+
+        //forloop
+        for (int i = 5; i <= 15; i++){
+            System.out.println(i);
+        }
+
+        for (int i = 0; i <= 100; i+=2){
+            System.out.println(i);
+        }
+
+        for (int i = 100; i >= -10; i -= 5){
+            System.out.println(i);
+        }
+
     }
 }
