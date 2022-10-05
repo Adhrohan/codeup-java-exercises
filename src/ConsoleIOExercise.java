@@ -15,7 +15,7 @@ public class ConsoleIOExercise {
 
         //prompting user input 3 words, storing in a variable and displaying each words to the user.
         System.out.printf("Enter 3 words: %n");
-        String firstWord = scanner.next();
+        String firstWord = scanner.nextLine();
         String secondWord = scanner.next();
         String thirdWord = scanner.next();
         System.out.printf("The first word you entered is: %s %n", firstWord);
