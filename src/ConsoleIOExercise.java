@@ -18,6 +18,10 @@ public class ConsoleIOExercise {
         System.out.printf("The second word you entered is: %s %n", secondWord);
         System.out.printf("The third word you entered is: %s %n", thirdWord);
 
+        System.out.println("Enter a sentence: ");
+        String sentence = scanner.nextLine();
+        System.out.printf("You entered: %s",sentence);
+
 
     }
 
