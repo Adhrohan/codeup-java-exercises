@@ -21,6 +21,8 @@ public class SyntaxTypesAndVariables {
 //        System.out.println(++x);
 //        System.out.println(x);
         //value is increased first and then printed.
+//        int class;
+        //class is a reserved word in java and cannot be defined as an identifier.
         System.out.println("Favorite int number is " + myFavoriteNumber);
         System.out.println("Name as a string " + myString);
         System.out.println(newString);
