@@ -34,9 +34,23 @@ public class SyntaxTypesAndVariables {
         System.out.println(myNumber);
         System.out.println(myNewNumber);
 
-        int x = 4;
-        x += 5;
+//        int x = 4;
+//        x += 5;
+//        System.out.println(x);
+
+//        int x = 3;
+//        int y = 4;
+//        y *= x;
+//        System.out.println(y);
+
+        int x = 10;
+        int y = 2;
+        x /= y;
+        y -= x;
         System.out.println(x);
+        System.out.println(y);
+
+
 
 
     }
