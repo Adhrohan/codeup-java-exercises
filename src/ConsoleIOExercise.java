@@ -42,11 +42,21 @@ public class ConsoleIOExercise {
         System.out.printf("The perimeter of the classroom is: %d.%n",perimeter);
         System.out.printf("The area of the classroom is: %d.%n",area);
 
+        //BONUS
+        //prompting user to input length and width of a room.
+        System.out.println("Enter the length of the room: ");
+        float roomLength = scanner.nextFloat();
 
+        System.out.println("Enter the width of the room: ");
+        float roomWidth = scanner.nextFloat();
 
+        //calculating the perimeter and area of a room.
+        float roomPerimeter = (2 * roomLength) + (2 * roomWidth);
+        float roomArea = roomLength * roomWidth;
 
-
-
+        //displaying perimeter and area of a room to the user
+        System.out.printf("The perimeter of the room is: %.2f.%n",roomPerimeter);
+        System.out.printf("The area of the room is: %.2f.%n",roomArea);
 
 
     }
