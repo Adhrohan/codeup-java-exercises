@@ -13,9 +13,14 @@ public class SyntaxTypesAndVariables {
         float myNumber;
         myNumber = (float) 3.14;
         double myNewNumber = myNumber;
-        int x = 5;
-        System.out.println(x++);
-        System.out.println(x);
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+        // value is increased after and printed.
+//        int x = 5;
+//        System.out.println(++x);
+//        System.out.println(x);
+        //value is increased first and then printed.
         System.out.println("Favorite int number is " + myFavoriteNumber);
         System.out.println("Name as a string " + myString);
         System.out.println(newString);
