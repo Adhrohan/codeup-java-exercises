@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class MethodExercise {
     public static void main(String[] args) {
 
@@ -7,6 +7,8 @@ public class MethodExercise {
         multiplication(5,7);
         division(10,5);
         modulus(7, 5);
+        getInteger(1,10);
+
 
 
     }
@@ -40,6 +42,19 @@ public class MethodExercise {
         int modulus = input1 % input2;
         System.out.printf("Your remainder for the numbers provided is:%d %n", modulus);
     }
+
+    //Method to validate user input is in given range.
+    public static int getInteger(int min, int max){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the integer between 1 to 10:");
+        int userInput = scanner.nextInt();
+        if (userInput < 1 || userInput > 10){
+            System.out.println("Invalid number please enter a number again");
+           userInput = getInteger(1, 10);
+        }
+        return userInput;
+
+    };
 
 
 }
