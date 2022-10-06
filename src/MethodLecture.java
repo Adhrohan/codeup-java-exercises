@@ -5,6 +5,7 @@ public class MethodLecture {
         String greeting = "Hello";
         String name = "Yogesh";
         sayHello(greeting, name);
+        count(5);
     }
 
     //Defining method and calling function
@@ -16,9 +17,15 @@ public class MethodLecture {
         System.out.printf("%s, %s!\n", greeting, name);
     }
 
-
-
-
+    //recursion
+    public static void count(int n){
+        if (n <= 0){
+            System.out.println("all done.");
+            return;
+        }
+        System.out.println(n);
+        count(n-1);
+    }
 
 }
 
