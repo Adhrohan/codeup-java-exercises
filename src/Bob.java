@@ -33,8 +33,18 @@ public class Bob {
 //        System.out.println(input.endsWith("!"));
 //        System.out.println(input.endsWith("Yogesh!"));
 //        System.out.println(input.endsWith("yogesh!"));
-
-
+//        System.out.println(input.charAt(1));
+//        System.out.println(input.charAt(0));
+//        System.out.println(input.indexOf("Hello"));
+//        System.out.println(input.lastIndexOf('e'));
+//        System.out.println(input.length());
+//        System.out.println(input.replace("Hello", "Hi"));
+//        System.out.println(input.substring(0,5));
+//        System.out.println(input.toLowerCase());
+//        System.out.println(input.toUpperCase());
+//
+//        String input2 = "  Hello Codeup ";
+//        System.out.println(input2.trim());
 
     }
 }
