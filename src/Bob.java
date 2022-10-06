@@ -7,6 +7,7 @@ public class Bob {
             Scanner scanner = new Scanner(System.in);
             String userInput = scanner.nextLine();
 
+
             if (userInput.endsWith("?")){
                 System.out.println("Sure.");
             }
@@ -21,6 +22,18 @@ public class Bob {
             }
 
         }while (conversation == true);
+//String method practice
+//        String input = "Hello Yogesh!";
+//        System.out.println(input.equals("hello yogesh"));
+//        System.out.println(input.equals("Hello Yogesh!"));
+//        System.out.println(input.equalsIgnoreCase("hello yogesh!"));
+//        System.out.println(input.equalsIgnoreCase("Hello yogesh!"));
+//        System.out.println(input.startsWith("Hello"));
+//        System.out.println(input.startsWith("Yogesh"));
+//        System.out.println(input.endsWith("!"));
+//        System.out.println(input.endsWith("Yogesh!"));
+//        System.out.println(input.endsWith("yogesh!"));
+
 
 
     }
