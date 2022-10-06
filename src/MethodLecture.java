@@ -6,6 +6,9 @@ public class MethodLecture {
         String name = "Yogesh";
         sayHello(greeting, name);
         count(5);
+        countBackwards(5);
+        System.out.println(factorial(5));
+        System.out.println(bunnyEars(4));
     }
 
     //Defining method and calling function
@@ -27,6 +30,41 @@ public class MethodLecture {
         count(n-1);
     }
 
-}
+    //count backward using recursive method
+    public static void countBackwards(int n){
+        if (n == 0){
+            System.out.println("all done");
+        }
+        else {
+            System.out.println(n);
+            n--;
+            countBackwards(n);
+        }
+    }
+
+    //factorial using recursion
+    public static int factorial(int num){
+        //base of recursion to stop iteration.
+        if (num == 1){
+            return num;
+        }
+        else {
+            return num * factorial(num - 1);
+        }
+    }
+
+    //total number of bunnies ears using recursion
+    public static int bunnyEars(int bunnies){
+        if (bunnies == 0){
+            return 0;
+        }
+        else {
+            return bunnies + bunnies;
+        }
+    };
+
+};
+
+
 
 
