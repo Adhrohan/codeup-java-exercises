@@ -11,6 +11,7 @@ public class MethodLecture {
         System.out.println(bunnyEars(4));
         System.out.println(fibonacci(6));
         numbers(5);
+        sumNumbers(5);
 
     }
 
@@ -82,6 +83,15 @@ public class MethodLecture {
             System.out.println(i);
         }
     };
+
+    public static void sumNumbers(int num){
+        int sum = 0;
+        for (int i = 1; i <= num; i ++){
+            sum += i;
+        }
+        System.out.println(sum);
+    };
+
 
 
 
