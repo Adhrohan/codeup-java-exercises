@@ -10,12 +10,13 @@ public class ConsoleIOExercise {
         //Using Scanner class
         //storing a value in an integer variable
         Scanner scanner = new Scanner(System.in);
+        scanner.useDelimiter("\n");
         System.out.printf("Enter an integer: %n");
         int nxtInt = scanner.nextInt();
 
         //prompting user input 3 words, storing in a variable and displaying each words to the user.
         System.out.printf("Enter 3 words: %n");
-        String firstWord = scanner.nextLine();
+        String firstWord = scanner.next();
         String secondWord = scanner.next();
         String thirdWord = scanner.next();
         System.out.printf("The first word you entered is: %s %n", firstWord);
