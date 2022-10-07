@@ -10,6 +10,7 @@ public class MethodLecture {
         System.out.println(factorial(5));
         System.out.println(bunnyEars(4));
         System.out.println(fibonacci(6));
+        numbers(5);
 
     }
 
@@ -76,6 +77,11 @@ public class MethodLecture {
         }
     };
 
+    public static void numbers(int num){
+        for (int i = 1; i <= num; i++){
+            System.out.println(i);
+        }
+    };
 
 
 
