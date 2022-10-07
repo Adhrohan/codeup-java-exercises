@@ -2,7 +2,7 @@
 public class JavaTypess {
     public static void main(String[] args) {
         int a = 9;
-        long b = 999999999999l;
+        long b = 999999999999L;
         float c = 5.54f;
         double d = 5.454;
         String e = "hello, Yogesh!";
@@ -19,7 +19,11 @@ public class JavaTypess {
         System.out.println(g);
         System.out.println(i);
         System.out.println(j);
-    }
+
+        if (true){
+            System.out.println("we passed the first door");
+        }
+    };
 
 
-}
+};
