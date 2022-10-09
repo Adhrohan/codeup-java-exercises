@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class MethodLecture {
     public static void main(String[] args) {
         System.out.println("answer");
@@ -12,6 +13,7 @@ public class MethodLecture {
         System.out.println(fibonacci(6));
         numbers(5);
         sumNumbers(5);
+        positiveInteger(5);
 
     }
 
@@ -92,7 +94,20 @@ public class MethodLecture {
         System.out.println(sum);
     };
 
+    public static void positiveInteger(int num){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a positive integer: ");
+        int userInput = scan.nextInt();
+        System.out.println("You have entered:"+ userInput);
+            for(int i = 1; i <= userInput; i++){
+                System.out.println(userInput = userInput * i);
 
+
+            }
+
+
+
+    }
 
 
 };
