@@ -13,6 +13,11 @@ public class MethodExercise {
 //        System.out.println(getFactorial(5));
 
 
+        //simulating dice rolling
+        System.out.println("would you like to roll the dice?");
+        System.out.println();
+
+
     }
 
     //Addition method taking two parameters.
