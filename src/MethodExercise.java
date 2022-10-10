@@ -91,7 +91,9 @@ public class MethodExercise {
 //        return userInput;
 
     //game development
-    public static void
+    public static void HighLow(int num){
+
+    }
 
 
 
