@@ -14,10 +14,16 @@ public class MethodExercise {
 
 
         //simulating dice rolling
-        System.out.println("would you like to roll the dice?");
-        System.out.println();
+        System.out.println("How many sides are on your two dice?");
+        Scanner scan = new Scanner(System.in);
+        int userInput = scan.nextInt();
+        System.out.println("Enter the number of the sides of dice:");
+        randomize(5);
+    }
 
-
+    public static void randomize(int sides){
+        System.out.println((int)Math.floor(Math.random()*sides+1));
+        System.out.println((int)Math.floor(Math.random()*sides+1));
     }
 
     //Addition method taking two parameters.
