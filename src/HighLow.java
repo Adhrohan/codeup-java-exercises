@@ -11,6 +11,10 @@ public class HighLow {
         System.out.println("Enter a number from 1 to 100");
         int userInput = scanner.nextInt();
         System.out.println(userInput);
+        int guessNUmber = (int)Math.floor(Math.random()*num+1);
+        if (userInput < 1 || userInput > 100){
+            System.out.println("Your input is not in the range");
+        }
 
 
     }
