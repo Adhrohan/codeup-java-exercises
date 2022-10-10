@@ -3,7 +3,7 @@ import java.lang.Math;
 
 public class HighLow {
     public static void main(String[] args) {
-        highLow(6);
+        highLow(50);
 
     }
     public static void highLow(int num){
@@ -14,6 +14,18 @@ public class HighLow {
         int guessNUmber = (int)Math.floor(Math.random()*num+1);
         if (userInput < 1 || userInput > 100){
             System.out.println("Your input is not in the range");
+        }
+        else {
+            if (userInput == num){
+                System.out.println("good guess");
+                System.out.printf("guess number was %d.%n", guessNUmber);
+            }
+            if (userInput < num){
+                System.out.println("Higher");
+            }
+            if (userInput > num){
+                System.out.println("Lower");
+            }
         }
 
 
