@@ -19,5 +19,20 @@
          ada.firstName = "Ada";
          ada.lastName = "Lovelace";
          System.out.println(ada.sayHello());
+
+         System.out.println(Math.PI);
+
+         Person theBestDrummerAlive = new Person();
+         theBestDrummerAlive.name = "Neil Peart";
+
+         Person.worldPopulation += 1;
+         System.out.println(Person.worldPopulation);
+         System.out.println(theBestDrummerAlive.worldPopulation);
      }
+
+     public static long worldPopulation = 750000000L;
+     public String name;
+
+
 }
+
