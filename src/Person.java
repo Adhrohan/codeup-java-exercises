@@ -1,20 +1,50 @@
-
+import java.util.Scanner;
 
 // defining a person class and creating an instance of it.
- class Person {
+ public class Person {
+
     public static void main(String[] args) {
 
         Person yogesh = new Person();
         yogesh.name = "Yogesh";
         System.out.println(yogesh.getName());
-    }
-    public String name;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("What is your new name?");
+        String newName = scanner.nextLine();
+        yogesh.setName(newName);
+        yogesh.sayHello();
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1 == person2);
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1 == person2);
+
+//        Person person1 = new Person("John");
+//        Person person2 = person1;
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+//        person2.setName("Jane");
+//        System.out.println(person1.getName());
+//        System.out.println(person2.getName());
+
+    };
+
+    private String name;
     public String getName(){
-        return String.format(name);
+        return this.name;
+    };
+
+    public void setName(String name) {
+        this.name = name;
+    };
+
+    public void sayHello(){
+        System.out.printf("hello, %s!%n", name);
     }
 
-
-//    public String firstName;
+    //    public String firstName;
 //    public String lastName;
 //
 //    public String sayHello(){
