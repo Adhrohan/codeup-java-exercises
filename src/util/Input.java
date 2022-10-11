@@ -25,6 +25,25 @@ public class Input {
         return userNum;
     }
 
+    public static int getInt(){
+        int userInput = scanner.nextInt();
+        return userInput;
+    };
+
+    public static double getDouble(double min, double max){
+        System.out.printf("Enter your number between %s and %s:", min, max);
+        double userInput = scanner.nextDouble();
+        if (userInput < min || userInput > max){
+            getDouble(min,max);
+        }
+        return userInput;
+    }
+
+    public static double getDouble(){
+        double userInput = scanner.nextDouble();
+        return userInput;
+    }
+
 
 
 }
