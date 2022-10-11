@@ -14,5 +14,10 @@
          rick.firstName = "Rick";
          rick.lastName = "Sanchez";
          System.out.println(rick.sayHello());
+
+         Person ada = new Person();
+         ada.firstName = "Ada";
+         ada.lastName = "Lovelace";
+         System.out.println(ada.sayHello());
      }
 }
