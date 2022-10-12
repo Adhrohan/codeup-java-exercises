@@ -14,5 +14,13 @@ public class ArraysPractice {
         for (int i = 0; i < languages.length; i++){
             System.out.println(languages[i]);
         }
+
+        // forEach loop
+        String[] codings = {"python", "c#", "javascript", "java"};
+
+        for (String coding : codings
+             ) {
+            System.out.println(coding);
+        }
     }
 }
