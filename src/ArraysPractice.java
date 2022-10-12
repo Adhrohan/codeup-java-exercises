@@ -8,6 +8,11 @@ public class ArraysPractice {
         System.out.println(beatles[2]); // "Ringo"
         //System.out.println(beatles[3]); // Error Index 3 out of bounds for length 3
 
-        // Iterating through array using for loop.
+        // Iterating through property of an array using for loop.
+        String[] languages = {"html", "css", "javascript", "java"};
+
+        for (int i = 0; i < languages.length; i++){
+            System.out.println(languages[i]);
+        }
     }
 }
