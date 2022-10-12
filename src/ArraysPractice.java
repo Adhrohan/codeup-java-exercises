@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArraysPractice {
     public static void main(String[] args) {
         // using the array initializer syntax
@@ -31,6 +33,7 @@ public class ArraysPractice {
         };
         System.out.println(matrix[0][0]);
         System.out.println(matrix[2][2]);
+        System.out.println(Arrays.toString(matrix[0]));
         for (int[] row : matrix){
             for (int n : row){
                 System.out.println(n);
