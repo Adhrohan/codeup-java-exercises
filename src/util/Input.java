@@ -26,8 +26,11 @@ public class Input {
     }
 
     public static int getInt(){
-        int userInput = scanner.nextInt();
+        System.out.println("Enter an interger:");
+        int userInput = Integer.valueOf(scanner.nextInt());
         return userInput;
+
+
     };
 
     public static double getDouble(double min, double max){
@@ -40,8 +43,17 @@ public class Input {
     }
 
     public static double getDouble(){
-        double userInput = scanner.nextDouble();
+        System.out.println("Enter an decimal number:");
+        double userInput = Double.valueOf(scanner.nextDouble());
         return userInput;
+    }
+// Bonus exception and error handling
+    public static String getBinary(){
+        System.out.println("Enter a number:");
+        int userNumber = scanner.nextInt();
+        String toBinary = Integer.toString(userNumber,2);
+        return toBinary;
+
     }
 
 
