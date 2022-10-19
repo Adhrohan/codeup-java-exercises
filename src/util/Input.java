@@ -31,28 +31,35 @@ public class Input {
         return userInput;
 
 
+
     };
 
-    public static double getDouble(double min, double max){
-        System.out.printf("Enter your number between %s and %s:", min, max);
-        double userInput = scanner.nextDouble();
-        if (userInput < min || userInput > max){
-            getDouble(min,max);
-        }
-        return userInput;
-    }
+//    public static double getDouble(double min, double max){
+//        System.out.printf("Enter your number between %s and %s:", min, max);
+//        double userInput = scanner.nextDouble();
+//        if (userInput < min || userInput > max){
+//            getDouble(min,max);
+//        }
+//        return userInput;
+//    }
 
     public static double getDouble(){
-        System.out.println("Enter an decimal number:");
-        double userInput = Double.valueOf(scanner.nextDouble());
-        return userInput;
+        System.out.println("Enter a double:");
+        try {
+            double userInput = Double.valueOf(scanner.nextDouble());
+            return userInput;
+        }catch (Exception e){
+            System.out.println("wrong input, enter a number with decimal.");
+        }
+        return getDouble();
     }
 // Bonus exception and error handling
     public static String getBinary(){
         System.out.println("Enter a number:");
         int userNumber = scanner.nextInt();
+
         String toBinary = Integer.toString(userNumber,2);
-        return toBinary;
+        return getBinary();
 
     }
 
