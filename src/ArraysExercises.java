@@ -23,9 +23,9 @@ public class ArraysExercises {
             System.out.println(persons);
         }
 
+    }
 
-
-
+    public static void addPerson(String[] person){
 
     }
 }

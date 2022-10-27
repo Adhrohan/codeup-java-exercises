@@ -10,7 +10,7 @@ public class MethodExercise {
         division(10, 5);
         modulus(7, 5);
 //        getInteger(1,10);
-//        System.out.println(getFactorial(5));
+        System.out.println(getFactorial(5));
 
 
         //simulating dice rolling
@@ -21,9 +21,9 @@ public class MethodExercise {
         randomize(5);
     }
 
-    public static void randomize(int sides){
-        System.out.println((int)Math.floor(Math.random()*sides+1));
-        System.out.println((int)Math.floor(Math.random()*sides+1));
+    public static void randomize(int sides) {
+        System.out.println((int) Math.floor(Math.random() * sides + 1));
+        System.out.println((int) Math.floor(Math.random() * sides + 1));
     }
 
     //Addition method taking two parameters.
@@ -74,29 +74,24 @@ public class MethodExercise {
 //
 //    };
 
-    //Factorial of a number
-//    public static long getFactorial(int num) {
-//        System.out.println("Enter an integer from 1 to 10:");
-//        Scanner scanner = new Scanner(System.in);
-//        int userInput = scanner.nextInt();
-//        System.out.printf("%s is the number you entered %n", userInput);
-//        for (int i = 1; i <= 10; i++) {
-//            if (userInput == 1) {
-//                return userInput;
-//            } else {
-//                return userInput * getFactorial(userInput - 1);
-//            }
-//
-//        }
-//        return userInput;
+    //    Factorial of a number
+    public static long getFactorial(int num) {
+        System.out.println("Enter an integer from 1 to 10:");
+        Scanner scanner = new Scanner(System.in);
+        int userInput = scanner.nextInt();
+        System.out.printf("%s is the number you entered %n", userInput);
+        for (int i = 1; i <= 10; i++) {
+            if (userInput == 1) {
+                return userInput;
+            } else {
+                return userInput * getFactorial(userInput - 1);
+            }
 
-    //game development
-    public static void HighLow(int num){
+        }
+        return userInput;
+
 
     }
-
-
-
 }
 
 
