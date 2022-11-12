@@ -49,7 +49,6 @@ public class GradesApplication {
 
         do {
             System.out.println("What student would you like to see more information on?");
-            if (userInput.containsKey(student))
         }
 
 
