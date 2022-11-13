@@ -43,14 +43,5 @@ public class GradesApplication {
 
     }
 
-    public static void displayUser(HashMap<String, String> student){
-        Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
 
-        do {
-            System.out.println("What student would you like to see more information on?");
-        }
-
-
-    }
 }
